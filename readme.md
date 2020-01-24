@@ -11,17 +11,16 @@ Open another terminal and from the root directory of this project,
 
  1) composer require laravel/ui --dev
 
-2) php artisan ui react
 
 
-3) npm install
+2) npm install
 
 
 this will install all the required packages to enable react.
 
 then run 
 
-4) npm run dev to start the react application.
+3) npm run dev to start the react application.
 
 to start the laravel server
 
@@ -29,8 +28,8 @@ create a database (I used mysql) and link to it in the .env file.
 
 then run 
 
-5) php artisan migrate. to do the migration and create the necessary tables.
+4) php artisan migrate. to do the migration and create the necessary tables.
 
-6) run php artisan serve --port 8080 to start the app on port 8080
+5) run php artisan serve --port 8080 to start the app on port 8080
 
 Navigate to localhost:8080 on a browser to view the application.
