@@ -35,21 +35,21 @@ const Home = () => {
     return (
         <div className="container">
            <h1>This is Westeros</h1>
+           <p style={{textAlign:"center"}}>You can add more items by sending a post request to "/api/v1/books/"</p>
 
         <div className="main">
     {deleteAlert ? (<div className="alert alert-success">{deleteAlert.message}</div>) : "" }
             <ul className="cards">
-                {books
-                ? 
-                books.map(book=>(
-                    <SingleBook  key={book.id} id={book.id} title={book.name} authors={book.authors['0']} handleDelete={()=>deletePost(book.id)}/>
-                ))
-            :
-            <Loader/>
-
-            }
                 
-             
+                {
+                books
+                    ? 
+                    books.map(book=>(
+                        <SingleBook  key={book.id} id={book.id} title={book.name} authors={book.authors['0']} handleDelete={()=>deletePost(book.id)}/>
+                    ))
+                :
+                <Loader/>
+                }
             </ul>
         </div>
         </div>

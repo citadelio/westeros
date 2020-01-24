@@ -75773,7 +75773,11 @@ var Home = function Home() {
   }, []);
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "This is Westeros"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "This is Westeros"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    style: {
+      textAlign: "center"
+    }
+  }, "You can add more items by sending a post request to \"/api/v1/books/\""), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "main"
   }, deleteAlert ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "alert alert-success"
